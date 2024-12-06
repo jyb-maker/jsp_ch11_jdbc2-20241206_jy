@@ -33,11 +33,12 @@
 			pstmt = conn.prepareStatement(sql);
  		    pstmt.setString(1, mid); // sql문 내의 첫번째 ?에 mid를 세팅 
  		    
- 			int resultNum = pstmt.executeUpdate(); //성공하면 1반환 
+ 			int resultNum = pstmt.executeUpdate(); //성공하면 1반환 , 실패하면 0 반환
  			
 			if (resultNum ==1) {
 				out.println("회원 탈퇴 성공");
 			} else {
+				System.out.println(resultNum); // delete 값 
 				out.println("회원 탈퇴 실패!!");
 			}
 		}catch(Exception e) {
