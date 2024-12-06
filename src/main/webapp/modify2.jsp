@@ -89,7 +89,8 @@
 	나이 : <%= memberDto.getMemberage() %><br><br>
 	
 	<form action="modifyOk.jsp">
-		아이디 : <input type="text" name="mid" value="<%= memberDto.getMemberid() %>" disabled="disabled"><br><br>
+		<input type="hidden" name="mid" value="<%= memberDto.getMemberid() %>">
+		아이디 : <input type="text" value="<%= memberDto.getMemberid() %>" disabled="disabled"><br><br>
 		비밀번호 : <input type="text" name="mpw" value="<%= memberDto.getMemberpw() %>"><br><br>
 		이름 : <input type="text" name="mname" value="<%= memberDto.getMembername() %>"><br><br>
 		이메일 : <input type="text" name="memail" value="<%= memberDto.getMemberemail() %>"><br><br>
