@@ -38,7 +38,7 @@
 			if (resultNum ==1) {
 				out.println("회원 탈퇴 성공");
 			} else {
-				System.out.println(resultNum); // delete 값 
+				System.out.println(resultNum); // delete 실패했을 때 반환되는 값
 				out.println("회원 탈퇴 실패!!");
 			}
 		}catch(Exception e) {
