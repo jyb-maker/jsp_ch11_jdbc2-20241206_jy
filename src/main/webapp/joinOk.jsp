@@ -18,7 +18,7 @@
 		String memail = request.getParameter("memail");		
 		String mage = request.getParameter("mage");		
 		
-		String sql = "INSERT INTO membertbl(memberid,memberpw,membername,memberemail,memberage) VALUES ('"+mid+"','"+mpw+"','"+mname+"','"+memail+"','"+mage+"')";
+		String sql = "b membertbl(memberid,memberpw,membername,memberemail,memberage) VALUES ('"+mid+"','"+mpw+"','"+mname+"','"+memail+"','"+mage+"')";
 
 		String driverName = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/jbedu";
